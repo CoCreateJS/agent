@@ -1,17 +1,38 @@
 {
   "name": "@cocreate/agent",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Self-evolving agentic distributed runtime for CoCreate Server.",
-  "keywords": ["cocreate", "agent", "agents", "server", "integration"],
+  "keywords": [
+    "cocreate",
+    "agent",
+    "agents",
+    "server",
+    "integration"
+  ],
   "type": "module",
   "main": "./src/index.js",
-  "exports": { ".": "./src/index.js", "./agent": "./src/index.js" },
-  "scripts": { "test": "node --test" },
-  "repository": { "type": "git", "url": "git+https://github.com/CoCreateJS/agent.git" },
-  "bugs": { "url": "https://github.com/CoCreateJS/agent/issues" },
+  "exports": {
+    ".": "./src/index.js",
+    "./agent": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoCreateJS/agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CoCreateJS/agent/issues"
+  },
   "homepage": "https://CoCreateJS.com/docs/agent",
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "CoCreate LLC",
   "license": "AGPL-3.0",
-  "dependencies": { "@cocreate/config": "^2.0.2", "@cocreate/utils": "^2.0.2" }
+  "dependencies": {
+    "@cocreate/config": "^2.0.2",
+    "@cocreate/utils": "^2.0.2"
+  }
 }
