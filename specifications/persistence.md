@@ -1,0 +1,5 @@
+# Persistence
+
+Storage `agent`; database `models` contains arrays `context`, `tools`; database `conversations` contains `context`, `tools`, `messages`. No separate conversation array. Initial context root establishes the conversation. Generate conversation_id through CoCreate Utils UUID v7 when needed before persistence; CRUD generates root _id, returned as context_id, and all other persisted object IDs. Confirm exact Utils export and CRUD response/upsert contracts during implementation.
+
+Model records are scoped by trusted tenant and model. Conversation records additionally bind user and conversation; named context items bind context_id. Root uses active:true and its own _id; named item mutations must not target root. Messages bind model_id, conversation_id, context_id and user_id. Order by _id where CRUD guarantees time-ordered IDs; concurrent ordering may require a tie-breaker or sequence. Enforce unique active context and scoped name uniqueness. No separate Agent cache; durability and replication depend on storage.
