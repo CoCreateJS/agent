@@ -546,7 +546,7 @@ Native chat calls `send()` to add conversation and message persistence. MCP call
 
 CoCreate Agent does not directly implement provider-specific AI communication.
 
-Instead, it delegates inference to CoCreate Workflows.
+Instead, it delegates inference to CoCreate Workflow.
 
 ```js
 await server.workflow.run({
@@ -570,7 +570,7 @@ The workflow is responsible for:
 CoCreate Agent
         │
         ▼
-CoCreate Workflows
+CoCreate Workflow
         │
         ▼
 AST transformations
@@ -981,7 +981,7 @@ await server.agent.execute(payload);
 console.log(payload.agent.results);
 ```
 
-This allows Agent to compose naturally with CoCreate Workflows, AST, CRUD, API, and other runtime capabilities.
+This allows Agent to compose naturally with CoCreate Workflow, AST, CRUD, API, and other runtime capabilities.
 
 An inactivity response may return a separate pending snapshot while the original execution continues.
 
@@ -1044,8 +1044,8 @@ CoCreate Agent is designed to compose with the broader CoCreate ecosystem.
 | [CoCreate Cluster](https://github.com/CoCreateJS/cluster) | Process and server lifecycle |
 | [CoCreateDB](https://github.com/CoCreateJS/db) | Storage-agnostic database engine |
 | [CoCreate CRUD](https://github.com/CoCreateJS/crud) | Unified data operations |
-| [CoCreate AST](https://github.com/CoCreateJS/ast) | Structured operation execution |
-| [CoCreate Workflows](https://github.com/CoCreateJS/workflows) | Declarative orchestration |
+| [CoCreate Evaluate](https://github.com/CoCreateJS/evaluate) | Structured operation execution |
+| [CoCreate Workflow](https://github.com/CoCreateJS/workflow) | Declarative orchestration |
 | [CoCreate API](https://github.com/CoCreateJS/api) | Configurable API communication |
 | [CoCreate Authorize](https://github.com/CoCreateJS/authorize) | Operation authorization |
 | [CoCreate Config](https://github.com/CoCreateJS/config) | Runtime configuration |

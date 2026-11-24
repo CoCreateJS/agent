@@ -841,7 +841,7 @@ async function init(server) {
                                     endpoint: operation.endpoint
                                 };
 
-                                operation = await server.ast({
+                                operation = await server.evaluate({
                                     executeAST: {
                                         [`$server.${definition.path}`]:
                                             operation
